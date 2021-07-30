@@ -5,6 +5,11 @@ Contains a form where you can enter a Github username or organisation.\
 Once the form is submitted, it returns a paginated list of public repositories for this specific user or organisation.\
 The results table is paginated, sortable and filterable by all the options available on the API.
 
+## Libraries used to build the project
+ - React
+ - NPM
+ - [AG GRID](https://www.ag-grid.com/react-grid/)
+ - [Semantic UI](https://react.semantic-ui.com/)
 
 ## Available Scripts
 
