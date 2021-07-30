@@ -95,7 +95,7 @@ class App extends Component {
             name: ownerData.name,
             imageUrl: ownerData.avatar_url,
             repoUrl: ownerData.url,
-            repoCnt: ownerData.public_repos,
+            reposCnt: ownerData.public_repos,
             bio: ownerData.bio || ownerData.description
           }
         });
