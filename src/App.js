@@ -38,11 +38,11 @@ class App extends Component {
         domLayout: "autoHeight",
         sizeColumnsToFit: true
       },
-      reposCnt: "",
       userData: {
         name: "",
         imageUrl: "",
         repoUrl: "",
+        reposCnt: 0,
         bio: ""
       },
       searchOptions: [
@@ -72,7 +72,6 @@ class App extends Component {
           this.setState({
             rowData: json,
             isLoaded: true,
-            reposCnt: json.length,
             errorMessageText: "Loading data...",
             isError: false
           });
@@ -80,7 +79,6 @@ class App extends Component {
           this.setState({
             rowData: [],
             isLoaded: false,
-            reposCnt: 0,
             errorMessageText: "No data found",
             isError: true
           });
@@ -97,6 +95,7 @@ class App extends Component {
             name: ownerData.name,
             imageUrl: ownerData.avatar_url,
             repoUrl: ownerData.url,
+            repoCnt: ownerData.public_repos,
             bio: ownerData.bio || ownerData.description
           }
         });
@@ -141,7 +140,7 @@ class App extends Component {
     params.api.sizeColumnsToFit();
   };
   render() {
-    var { isLoaded, searchOptions, searchText, searchkey, userData, reposCnt, errorMessageText, isError } = this.state;
+    var { isLoaded, searchOptions, searchText, searchkey, userData, errorMessageText, isError } = this.state;
     var html = "";
     var header = <Menu fixed='top' inverted>
       <Container>
@@ -179,6 +178,7 @@ class App extends Component {
           <Form.Select
             options={searchOptions}
             placeholder='Select Type of repo'
+            data-testid="selecttyperepo"
             value={searchkey}
             required={true}
             fluid
@@ -219,7 +219,7 @@ class App extends Component {
               <div style={{ backgroundColor: '#000', padding: '5rem' }}>
                 <Segment raised>
                   <Label as='a' color='red' ribbon>
-                    {reposCnt} repos
+                    {userData.reposCnt} repos
                   </Label>
                   <Card>
                     <Card.Content>

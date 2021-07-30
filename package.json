@@ -5,7 +5,6 @@
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
-    "@testing-library/user-event": "^12.8.3",
     "ag-grid": "^18.1.2",
     "ag-grid-community": "^25.3.0",
     "ag-grid-react": "^25.3.0",
@@ -39,5 +38,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@testing-library/user-event": "^12.8.3",
+    "react-select-event": "^5.3.0"
   }
 }
