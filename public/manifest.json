@@ -1,0 +1,13 @@
+{
+  "short_name": "React App",
+  "name": "GitFetch Data demo app for Builderai",
+  "icons": [{
+    "src": "https://assets-global.website-files.com/5d779dddc494dd2921fdd1b2/5d7a5145e21ac93cdd037ef1_builder-favicon-32.png",
+    "sizes": "64x64 32x32 24x24 16x16",
+    "type": "image/x-icon"
+  }],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
