@@ -10,6 +10,10 @@ The results table is paginated, sortable and filterable by all the options avail
 
 In the project directory, you can run:
 
+### `npm install`
+
+Installs the dependecies to run the application 
+
 ### `npm start`
 
 Runs the app in the development mode.\
