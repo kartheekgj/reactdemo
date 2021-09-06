@@ -1,15 +1,19 @@
-# Getting Started with Builder AI React App
+# Getting Started with Paypal Smart Button integration- Server side Orders API
 
 ## About the Project
-Contains a form where you can enter a Github username or organisation.\
-Once the form is submitted, it returns a paginated list of public repositories for this specific user or organisation.\
-The results table is paginated, sortable and filterable by all the options available on the API.
+Checkout page and add the PayPal Smart Payment Buttons to your web page.
+
+- Buyer clicks the paypal pay button.
+- The button calls PayPal Orders API to set up a transaction.
+- The button launches the PayPal Checkout experience.
+- The buyer approves the payment.
+- The button calls PayPal Orders API to finalize the transaction.
+- Shows a confirmation to your buyer.
 
 ## Libraries used to build the project
- - React
  - NPM
- - [AG GRID](https://www.ag-grid.com/react-grid/)
- - [Semantic UI](https://react.semantic-ui.com/)
+ - [Paypal Order API](https://developer.paypal.com/docs/api/orders/v2/)
+ - [Paypal Smart Button](https://developer.paypal.com/docs/checkout/integrate/) 
 
 ## Available Scripts
 
